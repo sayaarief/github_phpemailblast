@@ -41,7 +41,7 @@ $mail->Password = "BPOOutfit"; // SMTP password
 // the top of this page with:
 // $email = $_REQUEST['email'] ;
 $mail->SetFrom('maincompany.bpo@gmail.com');
-$mail->From = $email;
+$mail->From = 'maincompany.bpo@gmail.com';
 
 // below we want to set the email address we will be sending our email to.
 //$mail->AddAddress("arief@m3online.com", "Arief Hilmi");
