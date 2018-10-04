@@ -18,12 +18,12 @@ $mail->IsSMTP();
 
 // As this email.php script lives on the same server as our email server
 // we are setting the HOST to localhost
-$mail->Host = "smtp.gmail.com";  // specify main and backup server
+$mail->Host = "tls://smtp.gmail.com";  // specify main and backup server
 //$mail->Host = "mail.i3teamworks.com";
 
 $mail->SMTPAuth = true;     // turn on SMTP authentication
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465;
+$mailer->SMTPSecure = 'tls';
+$mailer->Port = 587;
 $mail->SMTPDebug = 1;
 
 // When sending email using PHPMailer, you need to send from a valid email address
