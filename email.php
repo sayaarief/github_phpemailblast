@@ -151,7 +151,10 @@ $mail->DKIM_identity = $mail->From; */
 if(!$mail->Send())
 {
    echo "Message could not be sent. <p>";
-   echo "Mailer Error: " . $mail->ErrorInfo;
+   echo "Mailer Error: ";
+   echo '<pre>';
+   print_r($mail->ErrorInfo);
+   echo '</pre>';
    exit;
 }
 
