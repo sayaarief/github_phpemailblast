@@ -40,7 +40,7 @@ $mail->Password = "BPOOutfit"; // SMTP password
 // on our contact us page. We set this variable at
 // the top of this page with:
 // $email = $_REQUEST['email'] ;
-//$mail->SetFrom('maincompany.bpo@gmail.com');
+$mail->SetFrom('maincompany.bpo@gmail.com');
 $mail->From = $email;
 
 // below we want to set the email address we will be sending our email to.
