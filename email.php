@@ -22,6 +22,7 @@ $mail->Host = "smtp.gmail.com";  // specify main and backup server
 //$mail->Host = "mail.i3teamworks.com";
 
 $mail->SMTPAuth = true;     // turn on SMTP authentication
+$mail->SMTPSecure = "tls";  
 
 // When sending email using PHPMailer, you need to send from a valid email address
 // In this case, we setup a test email account with the following credentials:
