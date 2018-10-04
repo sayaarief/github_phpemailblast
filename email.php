@@ -22,9 +22,9 @@ $mail->Host = "smtp.gmail.com";  // specify main and backup server
 //$mail->Host = "mail.i3teamworks.com";
 
 $mail->SMTPAuth = true;     // turn on SMTP authentication
-$mail->SMTPSecure = "ssl";
+$mail->SMTPSecure = "tls";
 $mail->Port = 465;
-$mail->SMTPDebug = 1;
+$mail->SMTPDebug = 2;
 
 // When sending email using PHPMailer, you need to send from a valid email address
 // In this case, we setup a test email account with the following credentials:
@@ -48,11 +48,11 @@ $mail->From = $email;
 
 $mail->AddAddress($email);
 
-$cc_recipients = explode(",", $cc_email);
+/* $cc_recipients = explode(",", $cc_email);
 foreach($cc_recipients as $cc)
 {	
 	$mail->AddCC($cc, $cc);
-}
+} */
 
 // set word wrap to 50 characters
 $mail->WordWrap = 50;
