@@ -43,6 +43,14 @@ $mail->Password = "BPOOutfit"; // SMTP password
 $mail->SetFrom('maincompany.bpo@gmail.com');
 $mail->From = 'maincompany.bpo@gmail.com';
 
+$mail->SMTPOptions = array(
+					'ssl' => array(
+					'verify_peer' => false,
+					'verify_peer_name' => false,
+					'allow_self_signed' => true,
+					)
+				);
+
 // below we want to set the email address we will be sending our email to.
 //$mail->AddAddress("arief@m3online.com", "Arief Hilmi");
 
