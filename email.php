@@ -24,7 +24,7 @@ $mail->Host = "smtp.gmail.com";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->SMTPSecure = "tls";
 $mail->Port = 465;
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = 1;
 
 // When sending email using PHPMailer, you need to send from a valid email address
 // In this case, we setup a test email account with the following credentials:
