@@ -9,5 +9,6 @@
   <input type="submit" value="Submit" />
 </form>
 </body>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"15eee3851996bf022b649498d","lid":"f105bc6918","uniqueMethods":true}) })</script>
 </html>
 
