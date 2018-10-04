@@ -86,19 +86,19 @@ $message .= '<html>
 {
   "@context": "http://schema.org",
   "@type": "Event",
-  "name": "Taco Night",
-  "startDate": "2027-04-18T15:30:00Z",
-  "endDate": "2027-04-18T16:30:00Z",
+  "name": "MT-00060 i3TeamWorks Dev Meeting",
+  "startDate": "2018-10-03T08:30:00",
+  "endDate": "2018-10-03T12:30:00",
   "location": {
     "@type": "Place",
     "address": {
       "@type": "PostalAddress",
-      "name": "Google",
-      "streetAddress": "24 Willie Mays Plaza",
-      "addressLocality": "San Francisco",
-      "addressRegion": "CA",
-      "postalCode": "94107",
-      "addressCountry": "USA"
+      "name": "M3 Technologies (ASIA) Berhad",
+      "streetAddress": "Persiaran Tropicana",
+      "addressLocality": "Petaling Jaya",
+      "addressRegion": "Selangor",
+      "postalCode": "47410",
+      "addressCountry": "Malaysia"
     }
   },
   "potentialAction": [
@@ -107,7 +107,7 @@ $message .= '<html>
       "rsvpResponse": "yes",
       "handler": {
         "@type": "HttpActionHandler",
-        "url": "http://mysite.com/rsvp?eventId=123&value=yes"
+        "url": "https://m3.i3teamworks.com/mt_arief_rsvp.php?mt_id=1689&gid=490&s=1"
       },
       "attendance": "http://schema.org/RsvpAttendance/Yes"
     },
@@ -116,7 +116,7 @@ $message .= '<html>
       "rsvpResponse": "no",
       "handler": {
         "@type": "HttpActionHandler",
-        "url": "http://mysite.com/rsvp?eventId=123&value=no"
+        "url": "https://m3.i3teamworks.com/mt_arief_rsvp.php?mt_id=1689&gid=490&s=2"
       },
       "attendance": "http://schema.org/RsvpAttendance/No"
     },
@@ -125,7 +125,7 @@ $message .= '<html>
       "rsvpResponse": "maybe",
       "handler": {
         "@type": "HttpActionHandler",
-        "url": "http://mysite.com/rsvp?eventId=123&value=maybe"
+        "url": "https://m3.i3teamworks.com/mt_arief_rsvp.php?mt_id=1689&gid=490&s=3"
       },
       "attendance": "http://schema.org/RsvpAttendance/Maybe"
     }
@@ -135,15 +135,12 @@ $message .= '<html>
   </head>
   <body>
     <p>
-      Dear John, thanks for booking your Google I/O ticket with us.
+      MT-00060 i3TeamWorks Dev Meeting
     </p>
-    <p>
-      BOOKING DETAILS<br/>
-      Order for: John Smith<br/>
-      Event: Google I/O 2013<br/>
-      When: May 15th 2013 8:30am PST<br/>
-      Venue: Moscone Center, 800 Howard St., San Francisco, CA 94103<br/>
-      Reservation number: IO12345<br/>
+    <p>            
+      Event: MT-00060 i3TeamWorks Dev Meeting<br/>
+      When: Sep 3rd 2018 8:30am GMT+8<br/>
+      Venue: M3 Technologies (ASIA) Berhad, Persiaran Tropicana, Petaling Jaya, Selangor, Malaysia 47410<br/>      
     </p>
   </body>
 </html>';
